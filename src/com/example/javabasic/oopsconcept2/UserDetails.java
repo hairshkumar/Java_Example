@@ -1,6 +1,13 @@
 package com.example.javabasic.oopsconcept2;
 
+import com.example.javabasic.oopsconcept.Employee;
+
+//import com.example.javabasic.oopsconcept.Employee;
+
 public class UserDetails {
+	
+	Employee emp=new Employee("12121", 0, null);
+	
 	//read and write access
 	private String userName;
 	//read only
@@ -27,6 +34,7 @@ public class UserDetails {
 	public void setMobileNo(long mobileNo) {
 		this.mobileNo = mobileNo;
 	}
+	
 	public void showDetails() {
 		System.out.println("Name : "+getUserName());
 		System.out.println("Mobile : "+getMobileNo());
@@ -40,3 +48,4 @@ public class UserDetails {
 		details.showDetails();
 	}
 }
+

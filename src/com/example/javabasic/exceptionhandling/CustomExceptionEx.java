@@ -2,7 +2,7 @@ package com.example.javabasic.exceptionhandling;
 
 public class CustomExceptionEx {
 
-	public static void checkMail(String mail) throws InvalidMailFormat {
+	public static void checkMail(String mail)  {
 		if (!mail.endsWith("gmail.com"))
 			throw new InvalidMailFormat("invali mail format");
 		else

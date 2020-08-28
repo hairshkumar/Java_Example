@@ -7,6 +7,13 @@ abstract class human{
 
 public class Man extends human {
 
+	
+	public static void main(String[] args) {
+		Man man=new Man();
+		man.work();
+		man.love();
+	}
+	
 	@Override
 	public void work() {
 		System.out.println("Man Work for his family");
@@ -14,10 +21,5 @@ public class Man extends human {
 	@Override
 	public void love() {	
 		System.out.println("Man loves his family");
-	}
-	public static void main(String[] args) {
-		Man man=new Man();
-		man.work();
-		man.love();
 	}
 }
